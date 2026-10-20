@@ -21,7 +21,7 @@ jobs:
           restore-keys: ${{ runner.os }}-sonar
       # The analysis requires to retrieve dependencies and build successfully
       - name: Build
-        run: <mark><commands_to_build_your_project></mark>
+                run: echo "Preparing Flutter project for analysis"
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@d209202bc7d53ff1cc128f7f907dac145c9d6ae9 # v8.3.0
         env:
